@@ -27,7 +27,8 @@
     "inboundTag": [],
     "outboundTag": "proxy",
     "ip": [
-      "geoip:telegram"
+      "geoip:telegram",
+      "geoip:twitter"
     ]
   },
   {
