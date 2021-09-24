@@ -1,38 +1,40 @@
-[
-  {
-    "inboundTag": [],
-    "outboundTag": "block",
-    "domain": [
-      "geosite:category-ads-all"
-    ]
-  },
-  {
-    "inboundTag": [],
-    "outboundTag": "direct",
-    "domain": [
-      "geosite:google-cn",
-      "geosite:category-games@cn"
-    ]
-  },
-  {
-    "inboundTag": [],
-    "outboundTag": "proxy",
-    "domain": [
-      "geosite:geolocation-!cn",
-      "geosite:gfw",
-      "geosite:greatfire"
-    ]
-  },
-  {
-    "inboundTag": [],
-    "outboundTag": "proxy",
-    "ip": [
-      "geoip:telegram"
-    ]
-  },
-  {
-    "port": "0-65535",
-    "inboundTag": [],
-    "outboundTag": "direct"
-  }
-]
+"routing": {
+  "rules": [
+      {
+        "inboundTag": [],
+        "outboundTag": "block",
+        "domain": [
+          "geosite:category-ads-all"
+        ]
+      },
+      {
+        "inboundTag": [],
+        "outboundTag": "direct",
+        "domain": [
+          "geosite:google-cn",
+          "geosite:category-games@cn"
+        ]
+      },
+      {
+        "inboundTag": [],
+        "outboundTag": "proxy",
+        "domain": [
+          "geosite:geolocation-!cn",
+          "geosite:gfw",
+          "geosite:greatfire"
+        ]
+      },
+      {
+        "inboundTag": [],
+        "outboundTag": "proxy",
+        "ip": [
+          "geoip:telegram"
+        ]
+      },
+      {
+        "port": "0-65535",
+        "inboundTag": [],
+        "outboundTag": "direct"
+      }
+   ]
+}
